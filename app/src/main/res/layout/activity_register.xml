@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/reguname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:drawableStart="@drawable/baseline_person_outline_24"
+            android:drawablePadding="15dp"
+            android:padding="15dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/regemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="15dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/regpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <!-- Re-enter Password -->
+        <EditText
+            android:id="@+id/regpwd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/regphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#30ffffff"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="15dp"
+            android:inputType="phone"
+            android:padding="15dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/regsignbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green_primary"
+            android:textColor="@color/white"  />
+
+        <!-- Alternative Signup Text -->
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or sign up with"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Social Media Icons -->
+        <LinearLayout
+            android:id="@+id/socialicons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/googlepng"
+                android:contentDescription="Sign up with Google" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/facebookpng"
+                android:contentDescription="Sign up with Facebook" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/linkdinpng"
+                android:contentDescription="Sign up with LinkedIn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

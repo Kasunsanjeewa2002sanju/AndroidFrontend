@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:padding="16dp"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+        <!-- Profile Title -->
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"
+            android:paddingBottom="20dp" />
+
+        <!-- Profile Image -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/acount_circle"
+            android:contentDescription="Profile Picture"
+            android:padding="10dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/reguname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kasun Sanjeewa"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#5fFFFFFF"
+            android:drawableStart="@drawable/baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/regemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sanju123@gmail.com"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#5fFFFFFF"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="20dp"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/regpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="******"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#5fFFFFFF"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/regphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+94-XXXXXXXX"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="#5FFFFFFF"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="20dp"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/mpedit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Edit Profile"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green_primary"
+            android:textColor="@color/white"  />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
